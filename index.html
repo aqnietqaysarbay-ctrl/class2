@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+      }
+      .left {
+        display: flex;
+      }
+      .menu {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 70px;
+        height: 850px;
+        background-color: rgb(236, 236, 243);
+      }
+      .open {
+        padding: 10px;
+        background-color: rgb(251, 251, 255);
+        width: 270px;
+      }
+      .label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 190px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 5px;
+      }
+      .label img {
+        width: 30px;
+      }
+      .righttop {
+        background-color: rgb(251, 251, 255);
+        width: 1100px;
+        padding: 5px;
+        display: flex;
+        gap: 13px;
+        align-items: center;
+      }
+      .chat {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        gap: 350px;
+        padding-left: 10px;
+        border-bottom: 1px solid rgb(235, 238, 239);
+      }
+      .chats {
+        background-color: white;
+        border-radius: 15px;
+      }
+      .INchat {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+      .grt {
+        display: flex;
+        gap: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="menu">
+          <img src="Screenshot 2026-01-13 at 14.57.50.png" alt="" />
+          <img src="Screenshot 2026-01-13 at 14.57.59.png" alt="" />
+          <img src="Screenshot 2026-01-13 at 14.58.08.png" alt="" />
+          <img src="Screenshot 2026-01-13 at 14.58.19.png" alt="" />
+        </div>
+        <div class="open">
+          <img
+            style="width: 120px"
+            src="Screenshot 2026-01-13 at 14.58.31.png"
+            alt=""
+          />
+          <button
+            style="
+              border: none;
+              background-color: rgb(194, 234, 255);
+              height: 50px;
+              border-radius: 15px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-right: 20px;
+            "
+          >
+            <img
+              style="width: 40px"
+              src="Screenshot 2026-01-13 at 14.58.45.png"
+              alt=""
+            />Compose
+          </button>
+          <div class="menu2">
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 40px"
+                src="Screenshot 2026-01-13 at 14.59.45.png"
+                alt=""
+              />Starred
+            </button>
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 35px"
+                src="Screenshot 2026-01-13 at 14.59.59.png"
+                alt=""
+              />Snoozed
+            </button>
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 35px"
+                src="Screenshot 2026-01-13 at 15.33.36.png"
+                alt=""
+              />Sent
+            </button>
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 35px"
+                src="Screenshot 2026-01-13 at 15.00.15.png"
+                alt=""
+              />Drafts
+            </button>
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 35px"
+                src="Screenshot 2026-01-13 at 15.00.19.png"
+                alt=""
+              />More
+            </button>
+            <div class="label">
+              <p>Labels</p>
+              <img src="Screenshot 2026-01-13 at 15.00.35.png" alt="" />
+            </div>
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 35px"
+                src="Screenshot 2026-01-13 at 15.00.25.png"
+                alt=""
+              />study
+            </button>
+            <button
+              style="
+                border: none;
+                background-color: rgb(251, 251, 255);
+                height: 50px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+              "
+            >
+              <img
+                style="width: 35px"
+                src="Screenshot 2026-01-13 at 15.00.25.png"
+                alt=""
+              />university
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="righttop">
+          <fieldset
+            style="
+              display: flex;
+              flex-direction: row;
+              border-radius: 50px;
+              background-color: rgb(236, 236, 252);
+              border: none;
+              width: 660px;
+            "
+          >
+            <img
+              style="width: 30px"
+              src="Screenshot 2026-01-13 at 15.52.33.png"
+              alt=""
+            />
+            <input
+              style="
+                border: none;
+                background-color: rgb(236, 236, 252);
+                font-size: 16px;
+              "
+              type="text"
+              id="card"
+              placeholder="  Search mail"
+            />
+          </fieldset>
+          <img
+            style="width: 100px"
+            src="Screenshot 2026-01-13 at 15.02.42.png"
+            alt=""
+          />
+          <img
+            style="width: 40px; height: 40px"
+            src="Screenshot 2026-01-13 at 14.58.57.png"
+            alt=""
+          />
+          <img
+            style="width: 40px; height: 40px"
+            src="Screenshot 2026-01-13 at 14.59.05.png"
+            alt=""
+          />
+          <img
+            style="width: 40px; height: 40px"
+            src="Screenshot 2026-01-13 at 14.59.11.png"
+            alt=""
+          />
+          <img
+            style="width: 120px"
+            src="Screenshot 2026-01-13 at 15.02.56.png"
+            alt=""
+          />
+        </div>
+        <div class="chats">
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>aqnietqaysarbay--</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  <b>[aqnietqaysarbay-ctrl/vscode]</b> Run failed:
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>GitHub, me , Mail 3</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7"><b>[GitHub]</b> Please verify your device</p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Word of the Day: haywire - Master the
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Word of the Day: reservoir - Master the
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Codeforces Round 1072 <b>(Div. 3)</b> - Добрый
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Word of the Day: curlicue - <b>Master the</b>
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Word of the Day: exhilaration - Master the
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Word of the Day: snarky - Master the word
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Artlist me qaysarb</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  How to use<b> GPT 1.5 </b>for Al filmmaking and c
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>aqnietqaysarbay--</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Hello 2026 <b>[рейтинговый для всех!]</b> - До
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>aqnietqaysarbay--</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Artlist me qaysarb</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  <b>Рекомендуемые курсы на Stepik</b> - Здравств
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="grt">
+              <div class="INchat">
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.08.png"
+                  alt=""
+                />
+                <img
+                  style="width: 32px; height: 32px"
+                  src="Screenshot 2026-01-13 at 15.01.17.png"
+                  alt=""
+                />
+                <p><b>Vocabulary.., me 2</b></p>
+              </div>
+              <div class="OUTchat">
+                <p style="opacity: 0.7">
+                  Your personalized question of the week
+                </p>
+              </div>
+            </div>
+            <div class="INOUT">
+              <p>12 Jan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
